@@ -4721,18 +4721,6 @@ input, select, textarea {
 			border-radius: 8px;
 		}
 
-		/* En pantallas pequeñas, los elementos se muestran en una sola columna */
-		@media screen and (max-width: 768px) {
-			.posts {
-				flex-direction: column;
-				align-items: center;
-			}
-
-			.posts article {
-				width: 90%;
-			}
-		}
-
 		/* Estilos para los títulos de las secciones principales */
 			.post.featured {
 				text-align: center;
@@ -4747,15 +4735,6 @@ input, select, textarea {
 				font-size: 2rem;
 				font-weight: bold;
 				color: #333;
-			}
-
-			/* Estilos distintos para las secciones de certificaciones y proyectos */
-			.posts.certifications, .posts.projects {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				gap: 20px;
-				padding: 20px;
 			}
 
 			/* Diferencia de fondo entre ambas secciones */
@@ -4779,30 +4758,6 @@ input, select, textarea {
 				background: white;
 				text-align: center;
 				transition: transform 0.2s ease-in-out;
-			}
-
-			/* Hover efecto */
-			.posts.certifications article:hover, .posts.projects article:hover {
-				transform: scale(1.05);
-			}
-
-			/* Imágenes responsivas */
-			.posts.certifications article img, .posts.projects article img {
-				width: 100%;
-				height: auto;
-				border-radius: 8px;
-			}
-
-			/* En pantallas pequeñas, los artículos ocupan el ancho completo */
-			@media screen and (max-width: 768px) {
-				.posts.certifications, .posts.projects {
-					flex-direction: column;
-					align-items: center;
-				}
-
-				.posts.certifications article, .posts.projects article {
-					width: 90%;
-				}
 			}
 
 			/* Estilos para las secciones de Certificaciones y Proyectos Personales */
@@ -4838,10 +4793,6 @@ input, select, textarea {
 					transition: transform 0.2s ease-in-out;
 				}
 
-				/* Estilo para el hover */
-				.posts.certifications article:hover, .posts.projects article:hover {
-					transform: scale(1.05);
-				}
 
 				/* Imágenes responsivas */
 				.posts.certifications article img, .posts.projects article img {
