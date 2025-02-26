@@ -4620,7 +4620,6 @@ input, select, textarea {
 			right: 0;
 			text-align: right;
 			top: 0;
-			vertical-align: middle;
 			width: 7rem;
 		}
 
@@ -4688,18 +4687,9 @@ input, select, textarea {
 
 	}
 
-	/* Personal Projects & Certifications Layout */
-		.posts {
-			display: flex;
-			flex-wrap: wrap; /* Permite que los elementos se acomoden automáticamente */
-			justify-content: center;
-			gap: 20px; /* Espaciado entre elementos */
-			padding: 20px;
-		}
-
 		/* Agrega un efecto de escala al pasar el mouse */
 		.posts article:hover {
-			transform: scale(1.05);
+			transform: scale(1.02);
 		}
 
 		/* Imágenes responsivas */
@@ -4736,36 +4726,15 @@ input, select, textarea {
 			border-radius: 8px;
 		}
 
-		/* Estilos para las secciones de Certificaciones y Proyectos Personales */
-		.posts.certifications, .posts.projects {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-around; /* Distribuirá el espacio entre los elementos */
-			gap: 20px;
-			padding: 20px;
-		}
-
 		/* Para las certificaciones */
 		.posts.certifications article {
-			flex: 1 1 45%; /* 45% de ancho para cada artículo, ajustable */
-			max-width: 45%; /* Máximo de 45% del ancho */
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-			border-radius: 8px;
-			padding: 15px;
-			background: white;
-			text-align: center;
+
 			transition: transform 0.2s ease-in-out;
 		}
 
 		/* Para los proyectos personales */
 		.posts.projects article {
-			flex: 1 1 30%; /* 30% de ancho para cada artículo */
-			max-width: 30%; /* Máximo de 30% del ancho */
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-			border-radius: 8px;
-			padding: 15px;
-			background: white;
-			text-align: center;
+			
 			transition: transform 0.2s ease-in-out;
 		}
 
