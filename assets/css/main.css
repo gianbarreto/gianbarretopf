@@ -4687,11 +4687,6 @@ input, select, textarea {
 
 	}
 
-		/* Agrega un efecto de escala al pasar el mouse */
-		.posts article:hover {
-			transform: scale(1.02);
-		}
-
 		/* Imágenes responsivas */
 		.posts article img {
 			width: 100%;
@@ -4734,7 +4729,7 @@ input, select, textarea {
 
 		/* Para los proyectos personales */
 		.posts.projects article {
-			
+
 			transition: transform 0.2s ease-in-out;
 		}
 
