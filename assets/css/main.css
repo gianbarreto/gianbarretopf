@@ -4697,18 +4697,6 @@ input, select, textarea {
 			padding: 20px;
 		}
 
-		/* Estilos para cada artículo (certificaciones/proyectos) */
-		.posts article {
-			flex: 1 1 45%; /* Ajusta el ancho a un 45% en pantallas grandes */
-			max-width: 400px;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-			border-radius: 8px;
-			padding: 15px;
-			background: white;
-			text-align: center;
-			transition: transform 0.2s ease-in-out;
-		}
-
 		/* Agrega un efecto de escala al pasar el mouse */
 		.posts article:hover {
 			transform: scale(1.05);
@@ -4722,94 +4710,76 @@ input, select, textarea {
 		}
 
 		/* Estilos para los títulos de las secciones principales */
-			.post.featured {
-				text-align: center;
-				background: #f8f8f8; /* Color de fondo sutil */
-				padding: 30px;
-				border-radius: 10px;
-				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		.post.featured {
+			text-align: center;
+			background: #f8f8f8; /* Color de fondo sutil */
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		/* Mantener los títulos grandes y con el mismo formato */
+		.post.featured h2 a {
+			font-size: 2rem;
+			font-weight: bold;
+			color: #333;
+		}
+
+		/* Diferencia de fondo entre ambas secciones */
+		.posts.certifications {
+			background: #ffffff;
+		}
+
+		.posts.projects {
+			background: #f0f0f0;
+			padding: 30px;
+			border-radius: 8px;
+		}
+
+		/* Estilos para las secciones de Certificaciones y Proyectos Personales */
+		.posts.certifications, .posts.projects {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around; /* Distribuirá el espacio entre los elementos */
+			gap: 20px;
+			padding: 20px;
+		}
+
+		/* Para las certificaciones */
+		.posts.certifications article {
+			flex: 1 1 45%; /* 45% de ancho para cada artículo, ajustable */
+			max-width: 45%; /* Máximo de 45% del ancho */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			border-radius: 8px;
+			padding: 15px;
+			background: white;
+			text-align: center;
+			transition: transform 0.2s ease-in-out;
+		}
+
+		/* Para los proyectos personales */
+		.posts.projects article {
+			flex: 1 1 30%; /* 30% de ancho para cada artículo */
+			max-width: 30%; /* Máximo de 30% del ancho */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			border-radius: 8px;
+			padding: 15px;
+			background: white;
+			text-align: center;
+			transition: transform 0.2s ease-in-out;
+		}
+
+		/* En pantallas pequeñas, los artículos ocupan el ancho completo */
+		@media screen and (max-width: 768px) {
+			.posts.certifications, .posts.projects {
+				flex-direction: column;
+				align-items: center; /* Centra los elementos */
 			}
 
-			/* Mantener los títulos grandes y con el mismo formato */
-			.post.featured h2 a {
-				font-size: 2rem;
-				font-weight: bold;
-				color: #333;
-			}
-
-			/* Diferencia de fondo entre ambas secciones */
-			.posts.certifications {
-				background: #ffffff;
-			}
-
-			.posts.projects {
-				background: #f0f0f0;
-				padding: 30px;
-				border-radius: 8px;
-			}
-
-			/* Estilos individuales para cada artículo dentro de las secciones */
+			/* Ajusta el tamaño de los artículos en móviles */
 			.posts.certifications article, .posts.projects article {
-				flex: 1 1 45%;
-				max-width: 400px;
-				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-				border-radius: 8px;
-				padding: 15px;
-				background: white;
-				text-align: center;
-				transition: transform 0.2s ease-in-out;
+				width: 90%; /* Los artículos ocuparán el 90% del ancho del contenedor */
 			}
+		}
 
-			/* Estilos para las secciones de Certificaciones y Proyectos Personales */
-				.posts.certifications, .posts.projects {
-					display: flex;
-					flex-wrap: wrap;
-					justify-content: space-around; /* Esto distribuirá el espacio entre los elementos */
-					gap: 20px;
-					padding: 20px;
-				}
-
-				/* Para las certificaciones */
-				.posts.certifications article {
-					flex: 1 1 45%; /* 45% de ancho para cada artículo, ajustable */
-					max-width: 45%; /* Máximo de 45% del ancho */
-					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-					border-radius: 8px;
-					padding: 15px;
-					background: white;
-					text-align: center;
-					transition: transform 0.2s ease-in-out;
-				}
-
-				/* Para los proyectos personales */
-				.posts.projects article {
-					flex: 1 1 30%; /* 30% de ancho para cada artículo */
-					max-width: 30%; /* Máximo de 30% del ancho */
-					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-					border-radius: 8px;
-					padding: 15px;
-					background: white;
-					text-align: center;
-					transition: transform 0.2s ease-in-out;
-				}
-
-
-				/* Imágenes responsivas */
-				.posts.certifications article img, .posts.projects article img {
-					width: 100%;
-					height: auto;
-					border-radius: 8px;
-				}
-
-				/* En pantallas pequeñas, los artículos ocupan el ancho completo */
-				@media screen and (max-width: 768px) {
-					.posts.certifications, .posts.projects {
-						flex-direction: column;
-						align-items: center;
-					}
-
-					.posts.certifications article, .posts.projects article {
-						width: 90%;
-					}
-				}
 
