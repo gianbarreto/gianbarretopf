@@ -4687,62 +4687,61 @@ input, select, textarea {
 
 	}
 
-		/* Imágenes responsivas */
-		.posts article img {
-			width: 100%;
-			height: auto;
-			border-radius: 8px;
-		}
-
-		/* Estilos para los títulos de las secciones principales */
-		.post.featured {
-			text-align: center;
-			background: #f8f8f8; /* Color de fondo sutil */
-			padding: 30px;
-			border-radius: 10px;
-			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-		}
-
-		/* Mantener los títulos grandes y con el mismo formato */
-		.post.featured h2 a {
-			font-size: 2rem;
-			font-weight: bold;
-			color: #333;
-		}
-
-		/* Diferencia de fondo entre ambas secciones */
-		.posts.certifications {
-			background: #ffffff;
-		}
-
+		/* Mantener la sección de proyectos alineada y con tamaño uniforme */
 		.posts.projects {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px; /* Espacio entre proyectos */
 			background: #f0f0f0;
 			padding: 30px;
 			border-radius: 8px;
 		}
 
-		/* Para las certificaciones */
-		.posts.certifications article {
-
-			transition: transform 0.2s ease-in-out;
+		/* Hacer que todos los artículos de proyectos tengan el mismo tamaño */
+		.posts.projects article {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			width: 30%; /* Ajusta según el diseño */
+			min-height: 400px; /* Asegura que todos los proyectos tengan la misma altura */
+			padding: 20px;
+			box-sizing: border-box;
+			background: white;
+			border-radius: 8px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 		}
 
-		/* Para los proyectos personales */
-		.posts.projects article {
+		/* Ajustar imágenes dentro de los proyectos */
+		.posts.projects article img {
+			width: 100%;
+			height: 200px; /* Tamaño fijo para todas las imágenes */
+			object-fit: cover; /* Recorta la imagen manteniendo proporción */
+			border-radius: 8px;
+		}
 
-			transition: transform 0.2s ease-in-out;
+		/* Asegurar que el contenido se distribuya bien dentro del artículo */
+		.posts.projects article p {
+			flex-grow: 1;
+			text-align: center;
+		}
+
+		/* Mantener los botones alineados en la parte inferior */
+		.posts.projects .actions {
+			margin-top: auto;
 		}
 
 		/* En pantallas pequeñas, los artículos ocupan el ancho completo */
 		@media screen and (max-width: 768px) {
-			.posts.certifications, .posts.projects {
+			.posts.projects {
 				flex-direction: column;
 				align-items: center; /* Centra los elementos */
 			}
 
 			/* Ajusta el tamaño de los artículos en móviles */
-			.posts.certifications article, .posts.projects article {
-				width: 90%; /* Los artículos ocuparán el 90% del ancho del contenedor */
+			.posts.projects article {
+				width: 90%; /* Ocupará el 90% del ancho en móviles */
 			}
 		}
 
