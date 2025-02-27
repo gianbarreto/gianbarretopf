@@ -4231,3 +4231,14 @@ input, select, textarea {
         width: 30px; /* Reduce el tamaño de los íconos */
     }
 }
+
+/* Define la transición para el efecto fade */
+body {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Clase para cuando la página ya esté cargada */
+body.loaded {
+    opacity: 1;
+}

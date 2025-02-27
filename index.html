@@ -4,6 +4,17 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
+<script>
+	window.history.scrollRestoration = "manual"; // Evita que el navegador recuerde la posición del scroll
+  
+	window.addEventListener('load', function() {
+	  window.scrollTo(0, 0); // Vuelve al inicio de la página
+  
+	  document.body.classList.add('loaded'); // Activa el efecto fade
+	});
+  </script>  
+
 <html>
 	<head>
 		<title>Portfolio</title>
@@ -18,7 +29,7 @@
 		</style>
 		<link rel="icon" href="images/favicon.png" type="image/png">
 	</head>
-	<body class="is-preload">
+	<body class="is-preload">	  
 
 				<!-- Intro -->
 					<div id="intro">
