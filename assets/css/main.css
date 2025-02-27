@@ -4204,3 +4204,30 @@ input, select, textarea {
         width: 90%;
     }
 }
+
+.tools-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos pasen a otra línea en pantallas pequeñas */
+    gap: 30px; /* Espacio entre los elementos */
+    justify-content: center; /* Centra los ítems */
+    text-align: center;
+}
+
+.tools-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajuste para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .tools-list {
+        gap: 15px; /* Reduce el espacio entre elementos */
+    }
+
+    .tools-list img {
+        width: 30px; /* Reduce el tamaño de los íconos */
+    }
+}
