@@ -116,7 +116,7 @@ input, select, textarea {
 /* Type */
 
 	html {
-		font-size: 16pt;
+		font-size: 13pt;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -3151,10 +3151,9 @@ input, select, textarea {
 	}
 
 /* Intro */
-
 	#intro {
 		color: #000000; /* Cambiar a color negro */
-		padding: 8rem 4rem 6rem 4rem;
+		padding: 5rem 5rem 10rem 5rem; /* Reducir padding */
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3179,7 +3178,7 @@ input, select, textarea {
 		cursor: default;
 		text-align: center;
 		z-index: 1;
-		min-height: 100vh;
+		min-height: 80vh; /* Reducir la altura mínima */
 	}
 
 	#intro input, #intro select, #intro textarea {
@@ -3190,33 +3189,33 @@ input, select, textarea {
 		color: #ffffff; /* Cambiar a blanco */
 		border-bottom-color: rgba(255, 255, 255, 0.5); /* Cambiar al color blanco */
 	}
-	
+
 	#intro a:hover {
 		border-bottom-color: transparent;
 		color: #f0f0f0 !important; /* Cambiar a blanco más suave */
 	}
-	
+
 	#intro strong, #intro b {
 		color: #ffffff; /* Cambiar a blanco */
 	}
-	
+
 	#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
 		color: #ffffff; /* Cambiar a blanco */
 	}
-	
+
 	#intro blockquote {
 		border-left-color: #ffffff; /* Cambiar a blanco */
 	}
-	
+
 	#intro code {
 		background: rgba(255, 255, 255, 0.075); /* Cambiar a blanco claro */
 		border-color: #ffffff; /* Cambiar a blanco */
 	}
-	
+
 	#intro hr {
 		border-bottom-color: #ffffff; /* Cambiar a blanco */
 	}
-	
+
 	#intro input[type="submit"],
 	#intro input[type="reset"],
 	#intro input[type="button"],
@@ -3226,16 +3225,16 @@ input, select, textarea {
 		box-shadow: inset 0 0 0 2px #ffffff; /* Cambiar a blanco */
 		color: #ffffff !important; /* Cambiar a blanco */
 	}
-	
+
 	#intro input[type="submit"]:hover,
 	#intro input[type="reset"]:hover,
 	#intro input[type="button"]:hover,
 	#intro button:hover,
 	#intro .button:hover {
-		box-shadow: inset 0 0 0 2px #f0f0f0; /* Cambiar a blanco más suave */
-		color: #f0f0f0 !important; /* Cambiar a blanco más suave */
+		box-shadow: inset 0 0 0 2px #616161; /* Cambiar a blanco más suave */
+		color: #616161 !important; /* Cambiar a blanco más suave */
 	}
-	
+
 	#intro input[type="submit"].primary,
 	#intro input[type="reset"].primary,
 	#intro input[type="button"].primary,
@@ -3245,29 +3244,30 @@ input, select, textarea {
 		box-shadow: none;
 		color: #1e252d !important;
 	}
-	
+
 	#intro input[type="submit"].primary:hover,
 	#intro input[type="reset"].primary:hover,
 	#intro input[type="button"].primary:hover,
 	#intro button.primary:hover,
 	#intro .button.primary:hover {
 		background-color: #f0f0f0; /* Cambiar a blanco más suave */
-	}	
+	}
 
 	#intro h1 {
-		font-size: 5rem;
+		font-size: 5rem; /* Reducir tamaño de la fuente */
 		line-height: 1;
+		margin-bottom: 1rem;
 	}
 
 	#intro p {
-		font-size: 1.25rem;
+		font-size: 2rem; /* Reducir tamaño de la fuente */
 		font-style: italic;
-		margin-top: -0.25rem;
+		margin-top: 0rem;
 		text-align: center;
 	}
 
 	#intro + #header {
-		margin-top: -20rem;
+		margin-top: -10rem; /* Reducir margen superior */
 	}
 
 	#intro + #header .logo {
@@ -3319,10 +3319,9 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 980px) {
-
 		#intro {
-			padding: 4rem 4rem 2rem 4rem;
-			min-height: 90vh;
+			padding: 3rem 2rem 2rem 2rem; /* Ajustar padding */
+			min-height: 70vh; /* Reducir aún más la altura */
 		}
 
 		#intro p br {
@@ -3332,32 +3331,27 @@ input, select, textarea {
 		#intro + #header {
 			margin-top: -14rem;
 		}
-
 	}
 
 	@media screen and (max-width: 736px) {
-
 		#intro {
-			padding: 3rem 2rem 1rem 2rem;
-			min-height: 80vh;
+			padding: 2rem 1.5rem 1rem 1.5rem; /* Reducir padding */
+			min-height: 60vh; /* Reducir aún más la altura */
 		}
 
 		#intro h1 {
-			font-size: 3.25rem;
-			line-height: 1.1;
-			margin-bottom: 1rem;
+			font-size: 2.5rem; /* Reducir tamaño de la fuente */
 		}
 
 		#intro p {
-			font-size: 1rem;
-			margin-top: 0rem;
+			font-size: 0.875rem; /* Reducir tamaño de la fuente */
 		}
 
 		#intro .actions {
-			display: none;
+			display: none; /* Ocultar elementos no esenciales */
 		}
-
 	}
+
 
 	/* Header */
 
